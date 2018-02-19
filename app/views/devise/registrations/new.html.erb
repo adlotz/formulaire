@@ -4,35 +4,34 @@
   <div id= "l1">
     <h2>THP</h2>
     <p> ♫ l'inscription devient plus compliqué</p>
-    <p>_______</p>
+    <p> ♦  _______</p>
     <p> ♣ Avec thp tu peux apprendre plein de nouvelles choses trop stylay</p>
     <p> ♠ Par contre tu va galèrer comme pas possible</p>
-    <p> ♥ Sauf si tu as déjà fait du code avant </p>
-    <p> ♦ Ce qui n'est pas mon cas</p>
+    <p> ♥ Mais c'est comme ça que l'on progresse </p>
+    
   </div>
 
-<div id = "left">
+<div id = "right">
   <div id= "l2" class="child">
     <h2>Indiquez vos identifiants</h2>
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
 
   <div class="field">
-    <% f.label :email, "Adresse email" %><br />
-    <%= f.email_field :email , autofocus: true, autocomplete: "email", placeholder:"Adresse email..." %>
-  </div>
+    <% f.label :email, "Adresse email" %>
+    <%= f.email_field :email , autofocus: true, autocomplete: "email", placeholder:"Adresse email...", class: "champ" %>
+  </div>  
 
   <div class="field">
     <% f.label :password, "Mot de passe" %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off", placeholder: "Mot de passe..." %>
+    <% end %>
+    <%= f.password_field :password, autocomplete: "off", placeholder: "Mot de passe...", title:"#{ @minimum_password_length } caractères minimum" , class: "champ" %>
   </div>
 
     <div class="field">
-      <% f.label :password_confirmation, "Confirmez le mot de passe" %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirmez le mot de passe..." %>
+      <% f.label :password_confirmation, "Confirmez le mot de passe" %>
+      <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirmez le mot de passe...", class: "champ" %>
     </div>
 
       <div class="actions">
@@ -41,8 +40,8 @@
     <% end %>
   </div>
       <div id= "l3">
-      Vous avez déjà un compte? <%= link_to "login", new_user_session_path , class: "btn" %>
-    </div>
+        <%= link_to "login", new_user_session_path , class: "btn-login" %>
+      </div>
 
 </div>
 
