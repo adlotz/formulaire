@@ -1,24 +1,6 @@
-# README
+# Formulaire Stylay
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Exercice sur l'amélioration graphique d'une page de sign up
+(ça tien sur une page, mais qu'esce que c'est long à faire)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Clic [ici](https://formstyleal.herokuapp.com) pour jeter un coup d'oeil !
